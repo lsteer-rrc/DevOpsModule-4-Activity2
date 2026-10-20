@@ -34,13 +34,13 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     const name = req.body.name || 'Guest';
     const ipAddress = getContainerIp();
-    const greeting = `Hello ${name}, I am greeting you from a JavaScript container with IP address ${ipAddress}`;
+    const greeting = `Hello ${name}, I am greeting you from a JavaScript container with IP address ${ipAddress}. This is the banking app auto deployment`;
     res.send(`
         <!DOCTYPE html>
         <html lang="en">
         <head>
             <meta charset="UTF-8">
-            <title>Express Greeting App</title>
+            <title>Banking App Auto Deploy</title>
         </head>
         <body>
             <h1>Enter Your Name</h1>
